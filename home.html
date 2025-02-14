@@ -4,23 +4,351 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue</h1>
+        <div class="logo"> 
+            <img src="assets/images/logo.png" alt="JCRAM'V"> JCRAM'V
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Destination</a></li>
+                <li><a href="#section4">Hotel</a></li>
+                <li><a href="#section5">Reservation</a></li>
+            </ul>
+        </nav>
+        <button id="sign-out">Sign out</button>
     </header>
-
     <main>
-        <h2>Vous êtes connecté</h2>
-        <button id="logoutBtn">Se déconnecter</button>
+        <section class="container-first-section" id="section1">
+            <div class="container-first-section__text">
+                <h2 class="container-first-section__title">Discover the <br> best destinations <br> in the world</h2>
+                <p class="container-first-section__description">Welcome to JCRAM'V, your first destination for <br> discovering the most breathtaking places on Earth. <br> Wether you're seeking adventure or relaxation, we have <br> the perfect gataway for you.</p>
+                <button class="container-first-section__button">Get Started</button>
+            </div>
+            <div class="container-first-section__container-image">
+                <div class="container-first-section__container-image__background">
+                    <div class="container-first-section__container-image__background__container-star">
+                        <div class="container-first-section__container-image__background__container-star__background">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>6.8</p>
+                    </div>
+                    <img src="/assets/images/girlTravel.png" class="container-first-section__container-image__background__girlTravel" alt="Girl Travel">
+                    <img src="/assets/images/fleche-courbe.png" class="container-first-section__container-image__background__container-rightImage" alt="fleche courbe">
+                    <div class="container-first-section__container-image__background__container-bottomImage">
+                        <div class="container-first-section__container-image__background__bottomImage"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-second-section" id="section2">
+            <div class="container-second-section__container-images">
+                <div class="container-second-section__container-images__bloc1">
+                    <div class="container-second-section__container-images__bloc1__image1"></div>
+                    <div class="container-second-section__container-images__bloc1__image2"></div>
+                </div>
+                <div class="container-second-section__container-images__bloc2">
+                    <div class="container-second-section__container-images__bloc2__image1"></div>
+                    <div class="container-second-section__container-images__bloc2__image2"></div>
+                </div>
+            </div>
+            <div class="container-second-section__text">
+                <h2 class="container-second-section__text__title">We Recommend a Beautiful place <br> every month</h2>
+                <p class="container-second-section__text__description">At JCRAM'V, we strive to bring you the most stunning destinations every <br> month. From tropical paradises to historic landmarks, our curated <br> selections are sure to inspire your next adventure.</p>
+                <button class="container-second-section__text__button">Reservation</button>
+                <div class="container-second-section__text__stats">
+                    <div class="container-second-section__text__stats__stat">
+                        <p class="container-second-section__text__stats__stat__number"><span id="percent">0</span>%</p>
+                        <p class="container-second-section__text__stats__stat__description">of satisfied customers recommend our services</p>
+                    </div>
+                    <div class="container-second-section__text__stats__stat">
+                        <p class="container-second-section__text__stats__stat__number"><span id="countries">0</span></p> 
+                        <p class="container-second-section__text__stats__stat__description">countries visited annually</p>
+                    </div>
+                    <div class="container-second-section__text__stats__stat">
+                        <p class="container-second-section__text__stats__stat__number"><span id="years">0</span></p>
+                        <p class="container-second-section__text__stats__stat__description">years of experience in the travel industry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-third-section" id="section3">
+            <h2 class="container-third-section__title">Top Destination</h2>
+            <p class="container-third-section__descripton">Explore our best destination</p>
+            <div class="container-third-section__container-cards">
+
+                <div class="container-third-section__container-cards__card1">
+                    <div class="container-third-section__container-cards__card1__image"></div>
+                    <div class="container-third-section__container-cards__card1__container-vol-info">
+                        <div class="container-third-section__container-cards__card1__container-vol-info__container-destination">
+                            <h3 class="container-third-section__container-cards__card1__container-vol-info__destination">Poitiers</h3>
+                            <p class="container-third-section__container-cards__card1__container-vol-info__container-duration">2 Days 3 Nights</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card1__container-vol-info__container-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="container-third-section__container-cards__card1__container-vol-info__container-number">4.3</p>
+                        </div>
+                    </div>
+                    <div class="container-third-section__container-cards__card1__services">
+                        <div class="container-third-section__container-cards__card1__container-service1">
+                            <i class="fa-solid fa-plane icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Plane</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card1__container-service2">
+                            <i class="fa-solid fa-hotel icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Hotel</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card1__container-service3">
+                            <i class="fa-solid fa-car icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Transfert</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card1__container-service4">
+                            <i class="fa-solid fa-umbrella-beach icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Activity</p>
+                        </div>
+                    </div>
+                    <div class="container-third-section__container-cards__card1__prices">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <p class="container-third-section__container-cards__card1__prices__number">98.90$/ person</p>
+                    </div>
+                </div>
+
+                <div class="container-third-section__container-cards__card2">
+                    <div class="container-third-section__container-cards__card2__image"></div>
+                    <div class="container-third-section__container-cards__card2__container-vol-info">
+                        <div class="container-third-section__container-cards__card2__container-vol-info__container-destination">
+                            <h3 class="container-third-section__container-cards__card2__container-vol-info__destination">Spain</h3>
+                            <p class="container-third-section__container-cards__card2__container-vol-info__container-duration">6 Days 7 Nights</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card1__container-vol-info__container-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="container-third-section__container-cards__card1__container-vol-info__container-number">4.7</p>
+                        </div>
+                    </div>
+                    <div class="container-third-section__container-cards__card2__services">
+                        <div class="container-third-section__container-cards__card2__container-service1">
+                            <i class="fa-solid fa-plane icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Plane</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card2__container-service2">
+                            <i class="fa-solid fa-hotel icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Hotel</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card2__container-service3">
+                            <i class="fa-solid fa-car icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Transfert</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card2__container-service4">
+                            <i class="fa-solid fa-umbrella-beach icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Activity</p>
+                        </div>
+                    </div>
+                    <div class="container-third-section__container-cards__card2__prices">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <p class="container-third-section__container-cards__card1__prices__number">98.90$/ person</p>
+                    </div>
+                </div>
+
+                <div class="container-third-section__container-cards__card3">
+                    <div class="container-third-section__container-cards__card3__image"></div>
+                    <div class="container-third-section__container-cards__card3__container-vol-info">
+                        <div class="container-third-section__container-cards__card3__container-vol-info__container-destination">
+                            <h3 class="container-third-section__container-cards__card3__container-vol-info__destination">Kenya</h3>
+                            <p class="container-third-section__container-cards__card3__container-vol-info__container-duration">8 Days 9 Nights</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card1__container-vol-info__container-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="container-third-section__container-cards__card1__container-vol-info__container-number">4.9</p>
+                        </div>
+                    </div>
+                    <div class="container-third-section__container-cards__card3__services">
+                        <div class="container-third-section__container-cards__card3__container-service1">
+                            <i class="fa-solid fa-plane icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Plane</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card3__container-service2">
+                            <i class="fa-solid fa-hotel icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Hotel</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card3__container-service3">
+                            <i class="fa-solid fa-car icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Transfert</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card3__container-service4">
+                            <i class="fa-solid fa-umbrella-beach icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Activity</p>
+                        </div>
+                    </div>
+                    <div class="container-third-section__container-cards__card3__prices">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <p class="container-third-section__container-cards__card1__prices__number">80$/ person</p>
+                    </div>
+                </div>
+
+               <div class="container-third-section__container-cards__card4">
+                    <div class="container-third-section__container-cards__card4__image"></div>
+                    <div class="container-third-section__container-cards__card4__container-vol-info">
+                        <div class="container-third-section__container-cards__card4__container-vol-info__container-destination">
+                            <h3 class="container-third-section__container-cards__card4__container-vol-info__destination">HallStatt</h3>
+                            <p class="container-third-section__container-cards__card4__container-vol-info__container-duration">3 Days 4 Nights</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card4__container-vol-info__container-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="container-third-section__container-cards__card1__container-vol-info__container-number">4.9</p>
+                        </div>
+                    </div>
+                    <div class="container-third-section__container-cards__card4__services">
+                        <div class="container-third-section__container-cards__card4__container-service1">
+                            <i class="fa-solid fa-plane icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Plane</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card4__container-service2">
+                            <i class="fa-solid fa-hotel icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Hotel</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card4__container-service3">
+                            <i class="fa-solid fa-car icon-service"></i>
+                            <p>Transfert</p>
+                        </div>
+                        <div class="container-third-section__container-cards__card4__container-service4">
+                            <i class="fa-solid fa-umbrella-beach icon-service"></i>
+                            <p class="container-third-section__container-cards__card1__container-service__name">Activity</p>
+                        </div>
+                    </div>
+                    <div class="container-third-section__container-cards__card4__prices">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <p class="container-third-section__container-cards__card1__prices__number">108.90$/ person</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fourth-section" id="section4">
+            <div class="container-fourth-section__reservation-container">
+                <div class="container-fourth-section__reservation-container__text">
+                    <h2 class="container-fourth-section__reservation-container__text__title">Life is short, <br> the world is wide</h2>
+                    <p class="container-fourth-section__reservation-container__text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum natus ex, sit numquam eligendi illum cupiditate?</p>
+                    <h3 class="container-fourth-section__reservation-container__text__subtitle">Here our Reservation</h3>
+                    
+                    <form class="container-fourth-section__reservation-container__text__form">
+                        <div class="container-fourth-section__reservation-container__text__form__container-inputs">
+                            <div class="container-fourth-section__reservation-container__text__form__container-inputs__blocs">
+                                <div class="container-fourth-section__reservation-container__text__form__container-inputs__bloc1">
+                                    <label for="location">Location</label>
+                                    <div class="input-group">
+                                        <i class="fa-solid fa-paper-plane"></i></span>
+                                        <input type="text" id="location" value="Paris" required>
+                                    </div>
+                                </div>
+                                <div class="container-fourth-section__reservation-container__text__form__container-inputs__bloc2">
+                                    <label for="check-in">Check in</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <input type="date" id="check-in" required>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="container-fourth-section__reservation-container__text__form__container-inputs__blocs">
+                                <div class="container-fourth-section__reservation-container__text__form__container-inputs__bloc3">
+                                    <label for="check-out">Check out</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <input type="date" id="check-out" required>
+                                    </div>
+                                </div>
+                                <div class="container-fourth-section__reservation-container__text__form__container-inputs__bloc4">
+                                    <label for="email">E-mail</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="container-fourth-section__reservation-container__text__form__button" type="submit">make reservation</button>
+                    </form>
+                </div>
+                <div class="container-fourth-section__reservation__container-image">
+                    <div class="container-fourth-section__reservation__image">
+                        <div id="reservation-confirmation">
+                            <i class="fa-solid fa-check-circle"></i>
+                            Votre réservation est faite !
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fifth-section" id="section5">
+            <h2 class="container-fifth-section__title">Our Hotel</h2>
+            <p class="container-fifth-section__descripton">You can see their one of our hotel destination</p>
+            <div class="container-fifth-section__conatainer-images">
+                <div class="container-fifth-section__conatainer-images__left">
+                    <div class="container-fifth-section__conatainer-images__left__image1"></div>
+                    <div class="container-fifth-section__conatainer-images__left__image2"></div>
+                </div>
+                <div class="container-fifth-section__conatainer-images__center">
+                </div>
+                <div class="container-fifth-section__conatainer-images__right">
+                    <div class="container-fifth-section__conatainer-images__right__image1"></div>
+                    <div class="container-fifth-section__conatainer-images__right__image2"></div>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 - Mon Site Web</p>
+        <div class="footer-container">
+            <div class="first-footer-section">
+                <div class="container-logo">
+                    <img src="/assets/images/logo.png" alt="JCRAM'V Logo" class="logo">
+                    <p class="container-logo__name">JCRAM'<span class="container-logo__name__orange">V</span></p>
+                </div>
+                
+                <p class="first-footer-section__description">Explore the world with JCRAM'V and discover unforgettable experiences. From the moment you arrive, we're dedicated to making your journey extraordinary.</p>
+                <div class="first-footer-section__social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <div class="second-footer-section">
+                <h3 class="second-footer-section__title">Contact US</h3>
+                <p class="second-footer-section__item">123 rue Radama Soavimasoandro</p>
+                <p class="second-footer-section__item">helstudent@school</p>
+                <p class="second-footer-section__item">+261-32-45-567-67</p>
+            </div>
+    
+            <div class="last-footer-section">
+                <h3 class="last-footer-section__title">Sign up to new paper</h3>
+                <form class="last-footer-section__newsletter">
+                    <input type="email" class="newsletter__input" required>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="last-footer-section__validation-message">
+                    sent!
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Design by JeanMarc RAJAONARIVELONA
+        </div>
     </footer>
-
-    <script src="assets/js/auth.js"></script>
+    
+    <script src="/assets/js/home.js"></script>
+    <script src="/assets/js/logout.js"></script>
 </body>
+
 </html>
