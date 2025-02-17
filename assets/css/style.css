@@ -5,6 +5,7 @@
     --black: #010101;
     --white: #f2f2f2;
     --background-color: aliceblue;
+    --orange: orange;
 }
 * {
     margin: 0;
@@ -14,5 +15,5 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
   

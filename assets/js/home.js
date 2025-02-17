@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
             header.style.width = "100vw";
             header.style.borderRadius = "0px";
             header.style.top = "0";
-            header.style.left = "0"; 
+            header.style.left = "0";   
             header.style.transform = "none";
+
         } else { 
             header.style.backgroundColor = "var(--white)";
             header.style.width = "95%";
@@ -17,6 +18,26 @@ document.addEventListener("DOMContentLoaded", function () {
             header.style.left = "50%";
             header.style.transform = "translateX(-50%)"; 
         }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.getElementById("menu-icon");
+    const menuOverlay = document.getElementById("menu-overlay");
+    const closeMenu = document.getElementById("close-menu");
+
+    menuIcon.addEventListener("click", function () {
+        menuOverlay.classList.add("active");
+    });
+
+    closeMenu.addEventListener("click", function () {
+        menuOverlay.classList.remove("active");
+    });
+
+    document.querySelectorAll(".menu-overlay a").forEach(link => {
+        link.addEventListener("click", function () {
+            menuOverlay.classList.remove("active");
+        });
     });
 });
 
@@ -38,17 +59,14 @@ function animateNumber(id, finalValue, duration) {
 
 function checkScroll() {
     if (window.scrollY >= 750) {
-        animateNumber("percent", 77, 5000);
-        animateNumber("countries", 169, 5000);
-        animateNumber("years", 38, 5000);
-        
+        animateNumber("percent", 99, 5000);
+        animateNumber("countries", 220, 5000);
+        animateNumber("years", 50, 5000);
         window.removeEventListener("scroll", checkScroll);
     }
 }
 
-
 window.addEventListener("scroll", checkScroll);
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");

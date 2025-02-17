@@ -11,10 +11,11 @@
 </head>
 <body>
     <header>
-        <div class="logo"> 
+        <div class="logo">
             <img src="assets/images/logo.png" alt="JCRAM'V"> JCRAM'V
         </div>
-        <nav>
+
+        <nav class="nav-menu">
             <ul>
                 <li><a href="#section1">Home</a></li>
                 <li><a href="#section2">About</a></li>
@@ -23,13 +24,31 @@
                 <li><a href="#section5">Reservation</a></li>
             </ul>
         </nav>
-        <button id="sign-out">Sign out</button>
+
+        <div class="container-buttons-responsive">
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button id="sign-out">Sign out</button>
+        </div>
+
+        <div class="menu-overlay" id="menu-overlay">
+            <button class="close-menu" id="close-menu">x</button>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Destination</a></li>
+                <li><a href="#section4">Hotel</a></li>
+                <li><a href="#section5">Reservation</a></li>
+            </ul>
+        </div>
     </header>
+
     <main>
         <section class="container-first-section" id="section1">
             <div class="container-first-section__text">
-                <h2 class="container-first-section__title">Discover the <br> best destinations <br> in the world</h2>
-                <p class="container-first-section__description">Welcome to JCRAM'V, your first destination for <br> discovering the most breathtaking places on Earth. <br> Wether you're seeking adventure or relaxation, we have <br> the perfect gataway for you.</p>
+                <h2 class="container-first-section__title">Discover the best destinations in the world</h2>
+                <p class="container-first-section__description">Welcome to JCRAM'V, your first destination for discovering the most breathtaking places on Earth. Wether you're seeking adventure or relaxation, we have the perfect gataway for you.</p>
                 <button class="container-first-section__button">Get Started</button>
             </div>
             <div class="container-first-section__container-image">
@@ -40,8 +59,8 @@
                         </div>
                         <p>6.8</p>
                     </div>
-                    <img src="/assets/images/girlTravel.png" class="container-first-section__container-image__background__girlTravel" alt="Girl Travel">
-                    <img src="/assets/images/fleche-courbe.png" class="container-first-section__container-image__background__container-rightImage" alt="fleche courbe">
+                    <img src="assets/images/girlTravel.png" class="container-first-section__container-image__background__girlTravel" alt="Girl Travel">
+                    <img src="assets/images/fleche-courbe.png" class="container-first-section__container-image__background__container-rightImage" alt="fleche courbe">
                     <div class="container-first-section__container-image__background__container-bottomImage">
                         <div class="container-first-section__container-image__background__bottomImage"></div>
                     </div>
@@ -61,8 +80,8 @@
                 </div>
             </div>
             <div class="container-second-section__text">
-                <h2 class="container-second-section__text__title">We Recommend a Beautiful place <br> every month</h2>
-                <p class="container-second-section__text__description">At JCRAM'V, we strive to bring you the most stunning destinations every <br> month. From tropical paradises to historic landmarks, our curated <br> selections are sure to inspire your next adventure.</p>
+                <h2 class="container-second-section__text__title">We Recommend a Beautiful place every month</h2>
+                <p class="container-second-section__text__description">At JCRAM'V, we strive to bring you the most stunning destinations every month. From tropical paradises to historic landmarks, our curated selections are sure to inspire your next adventure.</p>
                 <button class="container-second-section__text__button">Reservation</button>
                 <div class="container-second-section__text__stats">
                     <div class="container-second-section__text__stats__stat">
@@ -84,8 +103,8 @@
         <section class="container-third-section" id="section3">
             <h2 class="container-third-section__title">Top Destination</h2>
             <p class="container-third-section__descripton">Explore our best destination</p>
+            
             <div class="container-third-section__container-cards">
-
                 <div class="container-third-section__container-cards__card1">
                     <div class="container-third-section__container-cards__card1__image"></div>
                     <div class="container-third-section__container-cards__card1__container-vol-info">
@@ -283,7 +302,7 @@
                     <div class="container-fourth-section__reservation__image">
                         <div id="reservation-confirmation">
                             <i class="fa-solid fa-check-circle"></i>
-                            Votre réservation est faite !
+                            Reservation success
                         </div>                        
                     </div>
                 </div>
@@ -311,7 +330,7 @@
         <div class="footer-container">
             <div class="first-footer-section">
                 <div class="container-logo">
-                    <img src="/assets/images/logo.png" alt="JCRAM'V Logo" class="logo">
+                    <img src="assets/images/logo.png" alt="JCRAM'V Logo" class="logo">
                     <p class="container-logo__name">JCRAM'<span class="container-logo__name__orange">V</span></p>
                 </div>
                 
@@ -347,8 +366,8 @@
         </div>
     </footer>
     
-    <script src="/assets/js/home.js"></script>
-    <script src="/assets/js/logout.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/logout.js"></script>
 </body>
 
 </html>
